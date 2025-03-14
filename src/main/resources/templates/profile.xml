@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UserProfiles>
+    <Company>${company}</Company>
+    <Profile>
+        <Identifier type="number">${userId}</Identifier>
+        <NameDetails>
+            <FirstName>${firstName}</FirstName>
+            <LastName>${lastName}</LastName>
+        </NameDetails>
+        <Membership since="${registerDate}"></Membership>
+    </Profile>
+</UserProfiles> 

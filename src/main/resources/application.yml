@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: csv-xml-converter
+  main:
+    web-application-type: none
+    allow-circular-references: true
+
+camel:
+  springboot:
+    name: CsvXmlConverter
+    main-run-controller: true  # 保持应用程序运行
+    duration-max-seconds: -1   # 永不超时
+  
+  # 主组件配置
+  component:
+    file:
+      # 文件处理相关配置
+      include: "*.csv"
+      delay: 1000
+      
+logging:
+  level:
+    root: INFO
+    com.csvxml: DEBUG
+    org.apache.camel: DEBUG
+    org.apache.camel.component.file: DEBUG 
